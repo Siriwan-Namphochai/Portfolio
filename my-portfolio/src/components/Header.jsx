@@ -1,32 +1,33 @@
 // src/components/Header.jsx
 import React from 'react';
-import { MagnifyingGlassIcon, BellIcon } from '@heroicons/react/24/outline'; // You'll need to install Heroicons
+import profileImage from '../assets/Image.jpg';
+import { BellIcon, Bars3Icon } from '@heroicons/react/24/outline'; // อย่าลืม import Bars3Icon
 
-const Header = () => {
+const Header = ({ setIsMobileMenuOpen }) => { // รับ setIsMobileMenuOpen เข้ามาใน props
   return (
     <div className="flex items-center justify-between h-16 bg-white border-b border-gray-200 shadow-sm px-4">
-      {/* Search Bar */}
-      <div className="relative w-full max-w-lg">
-        <MagnifyingGlassIcon className="absolute w-5 h-5 text-gray-400 left-3 top-1/2 transform -translate-y-1/2" />
-        <input
-          type="text"
-          placeholder="Search"
-          className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-        />
-      </div>
+      {/* เพิ่มปุ่ม Hamburger Menu สำหรับ Mobile */}
+      <button
+        type="button"
+        className="-m-2 p-2 text-gray-500 sm:hidden"
+        onClick={() => setIsMobileMenuOpen(true)}
+      >
+        <span className="sr-only">Open main menu</span>
+        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+      </button>
 
       {/* User and Notifications */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 ml-auto">
         <button className="p-1 text-gray-400 rounded-full hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
           <BellIcon className="w-6 h-6" />
         </button>
         <div className="flex items-center space-x-2">
           <img
-            className="w-8 h-8 rounded-full"
-            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt="Tom Cook"
+            className="w-8 h-8 rounded-full object-cover"
+            src={profileImage}
+            alt="Siriwan Namphochai"
           />
-          <span className="hidden text-sm font-medium text-gray-700 md:block">Tom Cook</span>
+          <span className="hidden text-sm font-medium text-gray-700 md:block">Siriwan Namphochai</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5 text-gray-400"
