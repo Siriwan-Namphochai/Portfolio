@@ -12,7 +12,7 @@ const Portfolio = () => {
           
           {/* ส่วนของรูปโปรไฟล์ */}
           <img 
-            className="h-64 w-64 rounded-full object-cover border-4 border-white shadow-md"
+            className="h-96 w-96  object-cover border-4 border-white shadow-md"
             src={profileImage}
             alt="Siriwan Namphochai"
           />
