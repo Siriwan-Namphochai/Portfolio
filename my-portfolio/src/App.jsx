@@ -8,25 +8,27 @@ import Projects from './components/Projects';
 import Calendar from './components/Calendar';
 import Documents from './components/Documents';
 import Reports from './components/Reports';
-import Portfolio from './components/Portfolio';
+import PROFILE from './components/Portfolio';
 import './index.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState('PROFILE');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // เพิ่ม State สำหรับเมนูมือถือ
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Dashboard':
-        return <Dashboard />;
-      case 'Team':
+      case 'PROFILE':
+        return <PROFILE />;
+      case 'Test Plan Example':
+        return <Dashboard  />;
+      case 'Test Case Example':
         return <Team />;
+      case 'Test Report Example':
+        return <Calendar />;
       case 'Projects':
         return <Projects />;
-      case 'Calendar':
-        return <Calendar />;
+
+
       case 'Documents':
         return <Documents />;
       case 'Reports':

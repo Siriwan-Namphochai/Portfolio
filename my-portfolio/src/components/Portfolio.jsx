@@ -9,6 +9,7 @@ const Portfolio = () => {
       {/* Profile & Contact Section */}
       <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
         <div className="flex flex-col items-center space-x-0 md:flex-row md:space-x-6 md:items-start">
+          
           {/* ส่วนของรูปโปรไฟล์ */}
           <img 
             className="h-64 w-64 rounded-full object-cover border-4 border-white shadow-md"

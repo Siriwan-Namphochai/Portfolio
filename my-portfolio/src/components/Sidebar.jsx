@@ -21,11 +21,12 @@ const teams = [
 // รับ isMobileMenuOpen และ setIsMobileMenuOpen เข้ามาใน props
 const Sidebar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMenuOpen }) => { 
   const navigation = [
-    { name: 'Portfolio', icon: StarIcon, href: '#', current: currentPage === 'Portfolio' },
-    { name: 'Dashboard', icon: HomeIcon, href: '#', current: currentPage === 'Dashboard' },
-    { name: 'Team', icon: UsersIcon, href: '#', current: currentPage === 'Team' },
+    { name: 'PROFILE', icon: StarIcon, href: '#', current: currentPage === 'PROFILE' },
+    { name: 'Test Plan Example', icon: HomeIcon, href: '#', current: currentPage === 'Test Plan Example' },
+    { name: 'Test Case Example', icon: UsersIcon, href: '#', current: currentPage === 'TEST CASE Example' },
+    { name: 'Test Report Example', icon: CalendarIcon, href: '#', current: currentPage === 'Test Report Example' },
     { name: 'Projects', icon: FolderIcon, href: '#', current: currentPage === 'Projects' },
-    { name: 'Calendar', icon: CalendarIcon, href: '#', current: currentPage === 'Calendar' },
+    
     { name: 'Documents', icon: DocumentIcon, href: '#', current: currentPage === 'Documents' },
     { name: 'Reports', icon: ChartBarIcon, href: '#', current: currentPage === 'Reports' },
   ];
@@ -93,15 +94,6 @@ const Sidebar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMen
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="px-2 py-4 border-t border-gray-200">
-              <a
-                href="#"
-                className="flex items-center px-4 py-2 text-sm font-medium text-gray-700 rounded-md group hover:bg-gray-100 hover:text-gray-900"
-              >
-                <Cog6ToothIcon className="w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-500" />
-                Settings
-              </a>
             </div>
           </div>
         </div>
