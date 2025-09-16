@@ -20,7 +20,7 @@ const Sidebar = ({ currentPage, setCurrentPage, isMobileMenuOpen, setIsMobileMen
     { name: 'Test Report Example', icon: CalendarIcon, href: '#', current: currentPage === 'Test Report Example' },
     { name: 'Projects', icon: FolderIcon, href: '#', current: currentPage === 'Projects' },
     { name: 'Documents', icon: DocumentIcon, href: '#', current: currentPage === 'Documents' },
-    { name: 'Reports', icon: ChartBarIcon, href: '#', current: currentPage === 'Reports' },
+    { name: 'Certificate', icon: ChartBarIcon, href: '#', current: currentPage === 'Certificate' },
   ];
 
   return (

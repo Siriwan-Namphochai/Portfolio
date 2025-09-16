@@ -1,7 +1,7 @@
+// src/components/Documents.jsx
 import React, { useState } from 'react';
 import SDLPic from '../assets/DocumentsPic/SDL.png';
 import STLCPic from '../assets/DocumentsPic/STLC.png';
-
 
 const Documents = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -16,24 +16,42 @@ const Documents = () => {
       content: (
         <>
           <h3 className="text-lg font-medium text-gray-700">หลักการและกระบวนการ (Principles and Processes):</h3>
-          <ul className="list-disc list-inside mt-2 ml-4 text-gray-600">
+          <ul className="list-disc list-inside mt-2 text-gray-600">
             <li>ทบทวนแนวคิดพื้นฐานของการทดสอบซอฟต์แวร์ เช่น SDLC, STLC</li>
-            <ol className="list-none ml-8">
-                <li>SDLC ย่อมาจาก Software Development Life Cycle (วงจรชีวิตการพัฒนาซอฟต์แวร์)</li>
-                <img 
-                            className="h-96 w-96  object-cover border-4 border-white shadow-md"
-                            src={SDLPic}
-                            alt="Siriwan Namphochai"
-                          />
-            </ol>
-            <ol className="list-none ml-8">
-                <li>STLC ย่อมาจาก Software Testing Life Cycle (วงจรชีวิตการทดสอบซอฟต์แวร์) </li>
-                <img 
-                            className="h-96 w-96  object-cover border-4 border-white shadow-md"
-                            src={STLCPic}
-                            alt="Siriwan Namphochai"
-                          />
-            </ol>
+            <ul className="list-none md:ml-8 mt-2">
+                <li>**SDLC** ย่อมาจาก Software Development Life Cycle (วงจรชีวิตการพัฒนาซอฟต์แวร์)</li>
+                <ul className="list-disc list-inside md:ml-12 text-gray-600 space-y-1">
+                  <li>Requirement Gathering and Analysis</li>
+                  <li>Design</li>
+                  <li>Implementation or Coding</li>
+                  <li>Testing</li>
+                  <li>Deployment</li>
+                  <li>Maintenance</li>
+                </ul>
+                <img 
+                  // ปรับขนาดรูปภาพให้ Responsive
+                  className="w-full h-auto object-cover border-4 border-white shadow-md mt-4"
+                  src={SDLPic}
+                  alt="Software Development Life Cycle diagram"
+                />
+            </ul>
+            <ul className="list-none md:ml-8 mt-4">
+                <li>**STLC** ย่อมาจาก Software Testing Life Cycle (วงจรชีวิตการทดสอบซอฟต์แวร์)</li>
+                <ul className="list-disc list-inside md:ml-12 text-gray-600 space-y-1">
+                  <li>Requirement Analysis</li>
+                  <li>Test Planning</li>
+                  <li>Test Case Development</li>
+                  <li>Environment Setup</li>
+                  <li>Test Execution</li>
+                  <li>Test Cycle Closure</li>
+                </ul>
+                <img 
+                  // ปรับขนาดรูปภาพให้ Responsive
+                  className="w-full h-auto object-cover border-4 border-white shadow-md mt-4"
+                  src={STLCPic}
+                  alt="Software Testing Life Cycle diagram"
+                />
+            </ul>
             <li>ประเภทของการทดสอบต่างๆ เช่น Functional Testing, Non-functional Testing (Performance, Security, Usability), Regression Testing, Smoke Testing, Sanity Testing และ User Acceptance Testing (UAT)</li>
           </ul>
           <h3 className="text-lg font-medium text-gray-700 mt-4">Methodologies:</h3>
@@ -48,17 +66,8 @@ const Documents = () => {
       content: (
         <>
           <h3 className="text-lg font-medium text-gray-700">การทดสอบด้วยตัวเอง (Manual Testing):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            เตรียมพร้อมที่จะอธิบายวิธีการทดสอบด้วยตัวเองที่คุณเคยใช้ เช่น การออกแบบ Test Case, การทำ Test Plan และการรายงานผลการทดสอบ
-          </p>
           <h3 className="text-lg font-medium text-gray-700 mt-4">เครื่องมือทดสอบอัตโนมัติ (Automated Testing Tools):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            อธิบายประสบการณ์ของคุณกับเครื่องมือต่างๆ เช่น **Selenium, Python, JavaScript** และอธิบายว่าคุณใช้เครื่องมือเหล่านี้อย่างไรในการเขียน Script หรือสร้าง Test Suite
-          </p>
           <h3 className="text-lg font-medium text-gray-700 mt-4">ระบบจัดการการทดสอบและติดตามข้อบกพร่อง (Test Management and Defect Tracking Systems):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            เตรียมตัวที่จะพูดถึงเครื่องมือที่คุณเคยใช้ เช่น Jira, TestRail, Asana หรือ Trello
-          </p>
         </>
       ),
     },
@@ -67,17 +76,8 @@ const Documents = () => {
       content: (
         <>
           <h3 className="text-lg font-medium text-gray-700">ทักษะการวิเคราะห์และใส่ใจในรายละเอียด (Analytical Skills and Attention to Detail):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            เตรียมยกตัวอย่างสถานการณ์ที่คุณเคยพบเจอในการทำงานจริง ที่คุณใช้ทักษะเหล่านี้ในการค้นหาข้อผิดพลาดที่ซับซ้อน หรือการวิเคราะห์สาเหตุของปัญหา
-          </p>
           <h3 className="text-lg font-medium text-gray-700 mt-4">การสื่อสาร (Communication Skills):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            อธิบายว่าคุณสื่อสารกับทีมพัฒนา (Developer), Product Owner และทีมอื่นๆ อย่างไร
-          </p>
           <h3 className="text-lg font-medium text-gray-700 mt-4">การแก้ปัญหา (Problem-solving Mindset):</h3>
-          <p className="mt-2 ml-4 text-gray-600">
-            ยกตัวอย่างปัญหาที่คุณเคยเจอและอธิบายขั้นตอนที่คุณใช้ในการวิเคราะห์ หาสาเหตุ และแก้ไขปัญหานั้นให้สำเร็จ
-          </p>
         </>
       ),
     }

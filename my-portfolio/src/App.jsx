@@ -41,7 +41,7 @@ function App() {
         return <Projects />;
       case 'Documents':
         return <Documents />;
-      case 'Reports':
+      case 'Certificate':
         return <Reports />;
       default:
         return <PROFILE />; // เปลี่ยนจาก Dashboard เป็น PROFILE

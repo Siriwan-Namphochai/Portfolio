@@ -11,7 +11,7 @@ const Calendar = () => {
           <strong>Application URL:</strong> https://www.saucedemo.com/<br />
           <strong>Test Report ID:</strong> TR-SWAG-20250915-001<br />
           <strong>Report Date:</strong> 15 กันยายน 2568<br />
-          <strong>Reported By:</strong> Gemini AI
+          <strong>Reported By:</strong> Siriwan Namphochai
         </p>
 
         {/* --- Test Execution Summary --- */}

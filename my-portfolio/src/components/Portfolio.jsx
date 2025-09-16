@@ -95,12 +95,21 @@ const Portfolio = () => {
             </ul>
           </div>
           <div className="bg-gray-100 p-3 rounded-lg flex-1 min-w-[200px]">
-            <h4 className="font-semibold text-gray-700">Tools & Platforms</h4>
+            <h4 className="font-semibold text-gray-700">Tools</h4>
             <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
               <li>SQL Server</li>
               <li>Microsoft Office</li>
               <li>JIRA</li>
               <li>Postman</li>
+              <li>GitHub/GitLab</li>
+            </ul>
+          </div>
+          <div className="bg-gray-100 p-3 rounded-lg flex-1 min-w-[200px]">
+            <h4 className="font-semibold text-gray-700">Framework</h4>
+            <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
+              <li>React</li>
+              <li>Playwright</li>
+              <li>Tailwind CSS</li>
             </ul>
           </div>
           <div className="bg-gray-100 p-3 rounded-lg flex-1 min-w-[200px]">

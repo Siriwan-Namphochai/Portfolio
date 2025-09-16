@@ -21,7 +21,7 @@ const Team = () => {
   return (
     <div className="p-8 space-y-8">
       <h2 className="text-xl font-semibold text-gray-800 flex items-center mb-4">
-        Test Plan Example
+        Test Case Example
       </h2>
       <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
